@@ -1,7 +1,7 @@
 #include "add.h"
-#include <iostream>
+#include <spdlog/spdlog.h>  // Include spdlog header
 
 int add(int a, int b) {
-    std::cout << "LOGGING [add.cpp]: Adding " << a << " and " << b << std::endl;
+    spdlog::info("LOGGING [add.cpp]: Adding {} and {}", a, b);
     return a + b;
 }
